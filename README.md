@@ -21,11 +21,11 @@ Standard Flutter lists become complex quickly when you add infinite scrolling an
 * **Robust UX:** Built-in "Retry" buttons for errors and "Empty" states for no data.
 
 ## ✨ Key Features
-* ✅ **Auto-Pagination:** Simple `onEndReached` callback.
-* ✅ **Grid Support:** Easy switch to `PerformanceListView.grid`.
-* ✅ **Sliver Ready:** Exported as `SliverPerformanceListView` for complex `CustomScrollView` layouts.
-* ✅ **Smart Caching:** Built-in wrapper for `CachedNetworkImage` with optimized memory usage.
-* ✅ **Refreshable:** Seamless integration with `RefreshIndicator`.
+*  **Auto-Pagination:** Simple `onEndReached` callback.
+*  **Grid Support:** Easy switch to `PerformanceListView.grid`.
+*  **Sliver Ready:** Exported as `SliverPerformanceListView` for complex `CustomScrollView` layouts.
+*  **Smart Caching:** Built-in wrapper for `CachedNetworkImage` with optimized memory usage.
+*  **Refreshable:** Seamless integration with `RefreshIndicator`.
 
 ## 📦 Installation
 
