@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:performance_list_view/performance_list_view.dart';
 
 void main() {
-  runApp(const MaterialApp(home: AdvancedPage()));
+  runApp(const MaterialApp(
+    home: AdvancedPage(),
+    debugShowCheckedModeBanner: false,
+  ));
 }
 
 class AdvancedPage extends StatefulWidget {
@@ -44,8 +47,7 @@ class _AdvancedPageState extends State<AdvancedPage> {
     }
 
     setState(() {
-      _items.addAll(
-          List.generate(10, (index) => 'New Item ${_items.length + index}'));
+      _items.addAll(List.generate(10, (index) => 'New Item ${_items.length + index}'));
       _isLoading = false;
     });
   }
@@ -53,14 +55,15 @@ class _AdvancedPageState extends State<AdvancedPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Robust Performance List")),
+      appBar: AppBar(title: const Text("Performance listview")),
       body: PerformanceListView<String>(
         items: _items,
         isLoading: _isLoading,
         hasError: _hasError,
         onRefresh: _refresh,
         onEndReached: _loadMore,
-        onRetry: _loadMore, // The retry button calls the load function again
+        onRetry: _loadMore,
+        // The retry button calls the load function again
         padding: const EdgeInsets.all(12),
         itemBuilder: (context, item) {
           return Card(
@@ -68,8 +71,7 @@ class _AdvancedPageState extends State<AdvancedPage> {
             elevation: 0.5,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
-              side: BorderSide(
-                  color: Colors.grey.shade100, width: 1), // Soft border
+              side: BorderSide(color: Colors.grey.shade100, width: 1), // Soft border
             ),
             child: ListTile(
               leading: PerformanceImage(
