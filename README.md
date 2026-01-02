@@ -7,7 +7,7 @@
 **Stop reinventing the wheel.** `PerformanceListView` is a production-ready, drop-in replacement for Flutter's standard ListView/GridView. It eliminates boilerplate by handling **Pagination**, **Pull-to-Refresh**, **Error States**, and **Memory-Optimized Caching** right out of the box.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d877396e-0543-4d96-bb91-59db91068d05"
+  <img src="https://github.com/user-attachments/assets/df5cf389-9890-4f31-bd10-1888a7bb84a4"
        alt="Ollama Local Chat Flutter UI"
        width="360" />
 </p>
