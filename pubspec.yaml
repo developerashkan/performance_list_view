@@ -1,11 +1,12 @@
 name: performance_list_view
 description: "A production-ready Flutter list wrapper with pagination, pull-to-refresh, error states, and image memory optimization."
 version: 0.0.1
-homepage:
+homepage: https://github.com/developerashkan/performance_list_view
+repository: https://github.com/developerashkan/performance_list_view
 
 environment:
-  sdk: ">=3.0.0 <4.0.0" # Updated Dart SDK range
-  flutter: ">=3.10.0" # Updated minimum Flutter version
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
 
 dependencies:
   flutter:
@@ -16,7 +17,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^6.0.0 # Corrected to stable lints for Dart 3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
