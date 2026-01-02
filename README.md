@@ -1,39 +1,35 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# ⚡ PerformanceListView
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+[![Pub Version](https://img.shields.io/pub/v/performance_list_view)](https://pub.dev/packages/performance_list_view)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Flutter](https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter)](https://flutter.dev)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+**Stop reinventing the wheel.** `PerformanceListView` is a production-ready, drop-in replacement for Flutter's standard ListView/GridView. It eliminates boilerplate by handling **Pagination**, **Pull-to-Refresh**, **Error States**, and **Memory-Optimized Caching** right out of the box.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d877396e-0543-4d96-bb91-59db91068d05"
+       alt="Ollama Local Chat Flutter UI"
+       width="360" />
+</p>
 
-## Features
+## 🚀 Why PerformanceListView?
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Standard Flutter lists become complex quickly when you add infinite scrolling and remote images. `PerformanceListView` solves:
+* **Jank-Free Scrolling:** Uses `RepaintBoundary` to isolate item paints.
+* **Memory Bloat:** `PerformanceImage` automatically resizes images to their display size in memory.
+* **Boilerplate:** No more manual `ScrollController` listeners for pagination.
+* **Robust UX:** Built-in "Retry" buttons for errors and "Empty" states for no data.
 
-## Getting started
+## ✨ Key Features
+* ✅ **Auto-Pagination:** Simple `onEndReached` callback.
+* ✅ **Grid Support:** Easy switch to `PerformanceListView.grid`.
+* ✅ **Sliver Ready:** Exported as `SliverPerformanceListView` for complex `CustomScrollView` layouts.
+* ✅ **Smart Caching:** Built-in wrapper for `CachedNetworkImage` with optimized memory usage.
+* ✅ **Refreshable:** Seamless integration with `RefreshIndicator`.
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## 📦 Installation
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Add this to your `pubspec.yaml`:
+```yaml
+dependencies:
+  performance_list_view: ^1.0.0
