@@ -1,29 +1,16 @@
-# ⚡ PerformanceListView
+# example
 
-[![Pub Version](https://img.shields.io/pub/v/performance_list_view)](https://pub.dev/packages/performance_list_view)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Flutter](https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter)](https://flutter.dev)
+A new Flutter project.
 
-**Stop reinventing the wheel.** `PerformanceListView` is a production-ready, drop-in replacement for Flutter's standard ListView/GridView. It eliminates boilerplate by handling **Pagination**, **Pull-to-Refresh**, **Error States**, and **Memory-Optimized Caching** right out of the box.
+## Getting Started
 
-## 🚀 Why PerformanceListView?
+This project is a starting point for a Flutter application.
 
-Standard Flutter lists become complex quickly when you add infinite scrolling and remote images. `PerformanceListView` solves:
-* **Jank-Free Scrolling:** Uses `RepaintBoundary` to isolate item paints.
-* **Memory Bloat:** `PerformanceImage` automatically resizes images to their display size in memory.
-* **Boilerplate:** No more manual `ScrollController` listeners for pagination.
-* **Robust UX:** Built-in "Retry" buttons for errors and "Empty" states for no data.
+A few resources to get you started if this is your first Flutter project:
 
-## ✨ Key Features
-* ✅ **Auto-Pagination:** Simple `onEndReached` callback.
-* ✅ **Grid Support:** Easy switch to `PerformanceListView.grid`.
-* ✅ **Sliver Ready:** Exported as `SliverPerformanceListView` for complex `CustomScrollView` layouts.
-* ✅ **Smart Caching:** Built-in wrapper for `CachedNetworkImage` with optimized memory usage.
-* ✅ **Refreshable:** Seamless integration with `RefreshIndicator`.
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-## 📦 Installation
-
-Add this to your `pubspec.yaml`:
-```yaml
-dependencies:
-  performance_list_view: ^1.0.0
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
