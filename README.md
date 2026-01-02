@@ -32,4 +32,4 @@ Standard Flutter lists become complex quickly when you add infinite scrolling an
 Add this to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  performance_list_view: ^1.0.0
+  performance_list_view: ^0.0.2
