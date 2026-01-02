@@ -6,6 +6,12 @@
 
 **Stop reinventing the wheel.** `PerformanceListView` is a production-ready, drop-in replacement for Flutter's standard ListView/GridView. It eliminates boilerplate by handling **Pagination**, **Pull-to-Refresh**, **Error States**, and **Memory-Optimized Caching** right out of the box.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d877396e-0543-4d96-bb91-59db91068d05"
+       alt="Ollama Local Chat Flutter UI"
+       width="360" />
+</p>
+
 ## 🚀 Why PerformanceListView?
 
 Standard Flutter lists become complex quickly when you add infinite scrolling and remote images. `PerformanceListView` solves:
@@ -15,11 +21,11 @@ Standard Flutter lists become complex quickly when you add infinite scrolling an
 * **Robust UX:** Built-in "Retry" buttons for errors and "Empty" states for no data.
 
 ## ✨ Key Features
-* **Auto-Pagination:** Simple `onEndReached` callback.
-* **Grid Support:** Easy switch to `PerformanceListView.grid`.
-* **Sliver Ready:** Exported as `SliverPerformanceListView` for complex `CustomScrollView` layouts.
-* **Smart Caching:** Built-in wrapper for `CachedNetworkImage` with optimized memory usage.
-* **Refreshable:** Seamless integration with `RefreshIndicator`.
+*  **Auto-Pagination:** Simple `onEndReached` callback.
+*  **Grid Support:** Easy switch to `PerformanceListView.grid`.
+*  **Sliver Ready:** Exported as `SliverPerformanceListView` for complex `CustomScrollView` layouts.
+*  **Smart Caching:** Built-in wrapper for `CachedNetworkImage` with optimized memory usage.
+*  **Refreshable:** Seamless integration with `RefreshIndicator`.
 
 ## 📦 Installation
 
