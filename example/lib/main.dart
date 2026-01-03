@@ -47,7 +47,8 @@ class _AdvancedPageState extends State<AdvancedPage> {
     }
 
     setState(() {
-      _items.addAll(List.generate(10, (index) => 'New Item ${_items.length + index}'));
+      _items.addAll(
+          List.generate(10, (index) => 'New Item ${_items.length + index}'));
       _isLoading = false;
     });
   }
@@ -71,7 +72,8 @@ class _AdvancedPageState extends State<AdvancedPage> {
             elevation: 0.5,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
-              side: BorderSide(color: Colors.grey.shade100, width: 1), // Soft border
+              side: BorderSide(
+                  color: Colors.grey.shade100, width: 1), // Soft border
             ),
             child: ListTile(
               leading: PerformanceImage(

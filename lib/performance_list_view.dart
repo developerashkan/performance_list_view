@@ -56,7 +56,7 @@ class PerformanceListView<T> extends StatelessWidget {
     this.physics,
     this.controller,
     this.padding = EdgeInsets.zero,
-  })  : isGrid = true;
+  }) : isGrid = true;
 
   @override
   Widget build(BuildContext context) {
