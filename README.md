@@ -1,4 +1,4 @@
-# ⚡ PerformanceListVie
+# ⚡ PerformanceListView
 
 [![Pub Version](https://img.shields.io/pub/v/performance_list_view)](https://pub.dev/packages/performance_list_view)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
