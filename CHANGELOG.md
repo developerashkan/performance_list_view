@@ -1,3 +1,6 @@
+## 0.0.3
+
+* fix warnings
 ## 0.0.2
 
 * add some improvements

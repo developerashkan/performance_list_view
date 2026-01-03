@@ -23,7 +23,7 @@ class PerformanceListView<T> extends StatelessWidget {
   final SliverGridDelegate? gridDelegate;
 
   const PerformanceListView({
-    Key? key,
+    super.key,
     required this.items,
     required this.itemBuilder,
     required this.onRefresh,
@@ -38,11 +38,10 @@ class PerformanceListView<T> extends StatelessWidget {
     this.controller,
     this.padding = EdgeInsets.zero,
   })  : isGrid = false,
-        gridDelegate = null,
-        super(key: key);
+        gridDelegate = null;
 
   const PerformanceListView.grid({
-    Key? key,
+    super.key,
     required this.items,
     required this.itemBuilder,
     required this.onRefresh,
@@ -57,8 +56,7 @@ class PerformanceListView<T> extends StatelessWidget {
     this.physics,
     this.controller,
     this.padding = EdgeInsets.zero,
-  })  : isGrid = true,
-        super(key: key);
+  })  : isGrid = true;
 
   @override
   Widget build(BuildContext context) {
@@ -131,7 +129,7 @@ class SliverPerformanceListView<T> extends StatefulWidget {
   final double scrollThreshold;
 
   const SliverPerformanceListView({
-    Key? key,
+    super.key,
     required this.items,
     required this.itemBuilder,
     this.onEndReached,
@@ -139,7 +137,7 @@ class SliverPerformanceListView<T> extends StatefulWidget {
     this.hasError = false,
     this.onRetry,
     this.scrollThreshold = 200.0,
-  }) : super(key: key);
+  });
 
   @override
   State<SliverPerformanceListView<T>> createState() =>
@@ -217,7 +215,7 @@ class SliverPerformanceGrid<T> extends StatelessWidget {
   final VoidCallback? onRetry;
 
   const SliverPerformanceGrid({
-    Key? key,
+    super.key,
     required this.items,
     required this.itemBuilder,
     required this.gridDelegate,
@@ -225,7 +223,7 @@ class SliverPerformanceGrid<T> extends StatelessWidget {
     this.isLoading = false,
     this.hasError = false,
     this.onRetry,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -262,13 +260,13 @@ class PerformanceImage extends StatelessWidget {
   final double borderRadius;
 
   const PerformanceImage({
-    Key? key,
+    super.key,
     required this.imageUrl,
     this.height,
     this.width,
     this.fit = BoxFit.cover,
     this.borderRadius = 0,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
