@@ -1,3 +1,5 @@
+## 0.0.4
+* Compatible with latest Dart version
 ## 0.0.3
 
 * fix warnings
