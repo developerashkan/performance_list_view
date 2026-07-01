@@ -1,6 +1,6 @@
 name: performance_list_view
 description: "A production-ready Flutter list wrapper with pagination, pull-to-refresh, error states, and image memory optimization."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/developerashkan/performance_list_view
 repository: https://github.com/developerashkan/performance_list_view
 
