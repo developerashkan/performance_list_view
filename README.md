@@ -36,6 +36,9 @@ dependencies:
 ```
 
 ## 🛠️ Recent Updates (v0.0.5)
+* **Major Performance Overhaul:** Switched to a fully Sliver-based architecture using `CustomScrollView` for maximum efficiency and flexibility.
+* **Optimized Rendering:** Integrated `RepaintBoundary` for each list item and added `itemExtent`/`prototypeItem` support for $O(1)$ layout calculations.
+* **Enhanced Memory Management:** `PerformanceImage` now includes `memCacheHeight` and `memCacheWidth` to prevent OOM errors.
+* **Maximum Extensibility:** Added customizable builders for all states (Loading, Empty, Error, Bottom Loader) and support for custom `headerSlivers` and `footerSlivers`.
 * **Modern Flutter/Dart:** Full compatibility with Flutter 3.44.0+ and Dart 3.12.0+.
-* **Code Health:** Applied `dart fix` for cleaner, more idiomatic code.
-* **Testing:** Added comprehensive widget tests for list rendering, empty states, and pull-to-refresh functionality.
+* **Testing:** Added a comprehensive suite of widget tests to ensure reliability.

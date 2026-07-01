@@ -12,7 +12,7 @@ void main() {
           home: Scaffold(
             body: PerformanceListView<String>(
               items: items,
-              itemBuilder: (context, item) => ListTile(title: Text(item)),
+              itemBuilder: (context, item, index) => ListTile(title: Text(item)),
               onRefresh: () async {},
             ),
           ),
@@ -29,9 +29,9 @@ void main() {
           home: Scaffold(
             body: PerformanceListView<String>(
               items: const [],
-              itemBuilder: (context, item) => ListTile(title: Text(item)),
+              itemBuilder: (context, item, index) => ListTile(title: Text(item)),
               onRefresh: () async {},
-              emptyBuilder: const Text('Empty List'),
+              emptyBuilder: (context) => const Text('Empty List'),
             ),
           ),
         ),
@@ -47,7 +47,7 @@ void main() {
           home: Scaffold(
             body: PerformanceListView<String>(
               items: List.generate(20, (index) => 'Item $index'),
-              itemBuilder: (context, item) => ListTile(title: Text(item)),
+              itemBuilder: (context, item, index) => ListTile(title: Text(item)),
               onRefresh: () async {
                 refreshed = true;
               },
@@ -76,7 +76,7 @@ void main() {
         ),
       );
 
-      expect(find.byType(Icon), findsOneWidget); // Placeholder icon
+      expect(find.byType(CircularProgressIndicator), findsOneWidget);
     });
   });
 }
