@@ -1,16 +1,13 @@
-# example
+# performance_list_view example
 
-A new Flutter project.
+A gallery of every feature, adaptive from phone to desktop:
 
-## Getting Started
+- **Feed**: infinite scroll with `PagingController.byPage`, skeletons, pull-to-refresh, separators and back-to-top with `scrollToIndex`.
+- **Masonry**: `PerformanceListView.masonry` with columns that follow the window width.
+- **Contacts**: sticky section headers and an A–Z index bar driven by `scrollToIndex`.
+- **AI chat**: `PerformanceChatView` with replies streamed token by token, a typing indicator and a jump-to-latest pill.
+- **Errors**: make the first page or page 2 fail and watch the list recover with retry.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter run -d chrome
+```

@@ -1,0 +1,11 @@
+# README images are served from GitHub; only the pubspec screenshots ship.
+assets/screenshots/desktop_masonry_light.png
+assets/screenshots/desktop_chat_dark.png
+assets/screenshots/phone_masonry_rtl_light.png
+assets/screenshots/phone_chat_pill_light.png
+assets/screenshots/phone_errors_light.png
+assets/screenshots/phone_loading_light.png
+example/build/
+example/tool/
+build/
+.dart_tool/
